@@ -1,0 +1,228 @@
+body {
+  background-color: black;
+   /* fix for some browsers to enable GPU acceleration */
+}
+
+@font-face {
+  font-family: "InjurialRegular";
+  src: url("ressources/205TF-Injurial-Regular.otf");
+}
+
+@font-face {
+  font-family: "TextLight";
+  src: url("ressources/VelinoText-Light.otf");
+}
+
+
+
+#reliure {
+  animation: reliure 5s ease-in-out infinite;
+}
+#histoire2 {
+  animation: histoire2 5s ease-in-out infinite;
+}
+
+.menu-images {
+  width:100%;
+  height:100vh;
+  overflow-y:hidden;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  animation: menu-images-animation 5s ease-in-out infinite;
+}
+
+.menu-image-right { /* chapelle image */
+  clip-path: polygon(10vw 0%, 100% 0, 100% 100%, 0% 100%);
+  width:100%;
+  height:100%;
+  background-image: url('../public/images/menu-img-left.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.menu-image-left { /* reliure image */
+  width:100%;
+  height:100%;
+  background-image: url('../public/images/menu-img-right.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ATTENTION AUX TEXTES DE CAUTION */
+.jeu { /*titre du histoire car tt est inverser*/
+  animation: jeu 5s ease-in-out infinite;
+  font-family: "InjurialRegular", injurial, sans-serif;
+  text-shadow: 3px 10px 60px rgb(0, 55, 255);
+  animation: jeu 5s ease-in-out infinite ;
+  transform-origin: bottom left;
+  left: 120px;
+  top: 550px;
+  font-size: 120px;
+  z-index: 1;
+}
+
+#text_jeu { /*texte de histoire chapelle */
+  transform-origin: bottom left;
+  z-index: 1;
+  left: 120px;
+  bottom: 40px;
+  font-size: 50px;
+  animation: jeu 5s ease-in-out infinite ;
+}
+
+p {
+  color: white;
+  font-family: "TextLight", light, sans-serif;
+  position: absolute;
+}
+
+.history { /*titre du jeu de la reliure */
+  font-family: "InjurialRegular", injurial, sans-serif;
+  text-shadow: 3px 10px 60px rgb(255, 230, 0);
+  animation: titre 5s ease-in-out infinite;
+  transform-origin: top right;
+  animation: history 5s ease-in-out infinite ;
+  right: 120px;
+  top: 40px;
+  font-size: 120px;
+  z-index: 1;
+}
+
+#text_histoire { /* texte du jeu */
+  transform-origin: top right;
+  z-index: 1;
+  font-size: 50px;
+  right: 120px;
+  top: 80px;
+  animation: history 5s ease-in-out infinite;
+  }
+
+  #gif_hand1 {
+  height: 500px;
+  width: 500px;
+  top: 500px;
+  left: 600px;
+  position: fixed;
+  rotate: 15deg;
+  z-index: 1;
+  animation: main1 5s ease-in-out infinite;
+}
+
+#gif_hand2 {
+  height: 500px;
+  width: 500px;
+  top: 300px;
+  right: 50px;
+  position:fixed;
+  rotate: 15deg;
+  z-index: 1;
+  animation: main2 5s ease-in-out infinite;
+}
+
+
+@keyframes menu-images-animation {
+  0%,
+  30%,
+  100% {
+    grid-template-columns: 60% 40%;
+    
+  }
+  50%,
+  80% {
+    grid-template-columns: 40% 60%;
+    
+  }
+}
+
+@keyframes reliure {
+  0%,
+  30%,
+  100% {
+    filter: blur(12px);
+    scale: 1;
+    
+  }
+  50%,
+  80% {
+    filter: blur(0);
+    scale: 1.2;
+    
+  }
+}
+
+@keyframes histoire2 {
+  0%,
+  30%,
+  100% {
+    filter: blur(0px);
+    scale: 1.5;
+    
+  }
+  50%,
+  80% {
+    filter: blur(12px);
+    scale: 1.2;
+  }
+}
+
+@keyframes main1 {
+  0%,
+  30%,
+  100% {
+    opacity: 100%;
+    
+  }
+  50%,
+  80% {
+    opacity: 0%;
+    
+  }
+}
+
+@keyframes main2 {
+  0%,
+  30%,
+  100% {
+    opacity: 0%;
+    
+  }
+  50%,
+  80% {
+    opacity: 100%;
+    
+  }
+}
+
+@keyframes jeu {
+  0%,
+  30%,
+  100% {
+    scale: 100%;
+    filter: none;
+  }
+  50%,
+  80% {
+    scale: 50%;
+    filter: none;
+  }
+}
+
+@keyframes history {
+  0%,
+  30%,
+  100% {
+    scale: 50%;
+    filter: none;
+  }
+  50%,
+  80% {
+    scale: 100%;
+    filter: none;
+  }
+}
+
+
+/*prout<3!?*/
