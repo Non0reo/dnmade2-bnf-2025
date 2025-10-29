@@ -1,0 +1,283 @@
+body {
+  background-color: #252525;
+  width: 1920px;
+  height: 1080px;
+  margin: 0px;
+}
+
+
+
+@font-face {
+  font-family: "Injurial-Regular";
+  src: url("../public/fonts/205TF-Injurial-Regular.otf") format(opentype);
+}
+
+@font-face {
+  font-family: "VelinoText-Medium";
+  src: url("../public/fonts/VelinoText-Medium.otf");
+}
+
+@font-face {
+  font-family: "VelinoText-Bold";
+  src: url("../public/fonts/VelinoText-Bold.otf");
+}
+
+@font-face {
+  font-family: "VelinoText-Black";
+  src: url("../public/fonts/VelinoText-Black.otf");
+}
+
+
+
+@keyframes traitAppear {
+  0% {
+    transform: scale(100%, 10%) translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(100%, 100%) translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes rondAppear {
+  0% {
+    transform: scale(100%, 100%) translateY(-88px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(100%, 100%) translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes descriptionAppear {
+  0% {
+    transform: scale(100%, 100%) translateY(-22px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(100%, 100%) translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+
+ol {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  margin: 0px 150px 200px 150px;
+  height: 8px;
+
+  background: #252525;
+  background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%,
+      rgba(119, 85, 0, 1) 3.5%,
+      rgba(236, 169, 0, 1) 8.5%,
+      rgba(119, 85, 0, 1) 13.5%,
+      rgba(119, 85, 0, 1) 92%,
+      rgba(37, 37, 37, 1) 100%);
+  gap: 150px;
+  transition: all 0.25s;
+}
+
+ol.step-1 {
+  background: #252525;
+  background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%,
+      rgba(119, 85, 0, 1) 21.5%,
+      rgba(236, 169, 0, 1) 26.5%,
+      rgba(119, 85, 0, 1) 31.5%,
+      rgba(119, 85, 0, 1) 90%,
+      rgba(37, 37, 37, 1) 100%);
+
+  /* background: #252525;
+  background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%,
+      rgba(236, 169, 0, 1) 8%,
+      rgba(236, 169, 0, 1) 26%,
+      rgba(119, 85, 0, 1) 31%,
+      rgba(119, 85, 0, 1) 90%,
+      rgba(37, 37, 37, 1) 100%); */
+}
+
+ol.step-2 {
+  background: #252525;
+  background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%,
+      rgba(119, 85, 0, 1) 40%,
+      rgba(236, 169, 0, 1) 45%,
+      rgba(119, 85, 0, 1) 50%,
+      rgba(119, 85, 0, 1) 90%,
+      rgba(37, 37, 37, 1) 100%);
+}
+
+ol.step-3 {
+  background: #252525;
+  background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%,
+      rgba(119, 85, 0, 1) 58.5%,
+      rgba(236, 169, 0, 1) 63.5%,
+      rgba(119, 85, 0, 1) 68.5%,
+      rgba(119, 85, 0, 1) 90%,
+      rgba(37, 37, 37, 1) 100%);
+}
+
+ol.step-4 {
+  background: #252525;
+  background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%,
+      rgba(119, 85, 0, 1) 77%,
+      rgba(236, 169, 0, 1) 82%,
+      rgba(119, 85, 0, 1) 87%,
+      rgba(119, 85, 0, 1) 90%,
+      rgba(37, 37, 37, 1) 100%);
+}
+
+li {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  font: bold 14px;
+  height: 50px;
+}
+
+li .annee {
+  position: absolute;
+  top: -70px;
+  left: -75px;
+  color: #775500;
+  transition: all 0.25s;
+  font-family: "VelinoText-Black";
+  font-size: 24px;
+}
+
+li .point {
+  top: -9px;
+  left: -25.8%;
+  /* 41% de base */
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 7px solid #775500;
+  border-radius: 15px;
+  background: #252525;
+  position: absolute;
+  transition: all 0.30s;
+}
+
+li .point:hover {
+  cursor: pointer;
+}
+
+li .point.active {
+  top: -11px;
+  left: -27.45%;
+  /* 39.45% de base */
+  width: 20px;
+  height: 20px;
+  border: 4px solid #eca900;
+  border-radius: 20px;
+  background: white;
+  transition: all 0.30s;
+}
+
+li .annee.active {
+  color: #eca900;
+}
+
+li .vl {
+  position: absolute;
+  left: -28px;
+  border-left: 2px dashed white;
+  height: 120px;
+  width: 1px;
+  opacity: 0;
+  transition: all 0.35s;
+}
+
+li .vl.active {
+  position: absolute;
+  opacity: 1;
+  transition: all 0.35s;
+
+  animation: traitAppear 500ms ease-in-out;
+}
+
+ul.descriptionContainer {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  position: relative;
+  left: 0px;
+  top: -95px;
+}
+
+ul li p.description {
+  position: absolute;
+  color: #d5be87;
+  margin-top: 20px;
+  font-family: "VelinoText-Bold";
+  width: 250px;
+  opacity: 0;
+  transition: all 0.35s;
+  font-size: 24px;
+}
+
+ul li p.description.active {
+  position: absolute;
+  opacity: 1;
+  transition: all 0.35s;
+  animation: descriptionAppear 600ms ease-in-out;
+}
+
+li span.pointBas {
+  position: absolute;
+  top: 103px;
+  left: -32.8px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 15px;
+  background: #D5BE87;
+  position: absolute;
+  transition: all 0.35s;
+  opacity: 0;
+}
+
+li span.pointBas.active {
+  position: absolute;
+  opacity: 1;
+  transition: all 0.35s;
+
+  animation: rondAppear 500ms ease-in-out;
+}
+
+#bouton-retour:hover {
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.15s;
+}
+
+#bouton-retour {
+  position: absolute;
+  margin-left: 80px;
+  display: flex;
+  top: 75px;
+  right: 8vw;
+  transition: all 0.15s;
+  width: 60px;
+  height: 60px;
+}
+
+#bouton-retour-hover {
+  position: absolute;
+  margin-left: 0px;
+  display: flex;
+  top: 75px;
+  right: 8vw;
+  transition: all 0.15s;
+  width: 60px;
+  height: 60px;
+}
