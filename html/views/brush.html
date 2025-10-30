@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>brush</title>
+  <link rel="stylesheet" href="../../styles/views/brush.css">
+</head>
+
+<body>
+  <!--<p id="text"></p>
+  <script type="module">
+    import data from 'public/data/brush.json' assert { type: 'json' };
+    console.log(data.texte);
+  </script>-->
+
+<div class="texte">
+<p>Ce manuscrit devient la propriété du roi de France Louis IX, connu sous le nom de Saint Louis, qui régna de 1226 à 1270. Les tranches du manuscrit sont alors peintes de fleurs de lys (emblème des rois de France) et des tours de Castille (emblème de la mère du roi, Blanche de Castille).
+<br><br>
+Le plat en or portant le Christ sur la croix créé vers 1260-1270 a peut-être été commandé par Saint Louis.
+<br><br><span>Touchez le pinceau pour découvrir la tranche.</span></p>
+</div>
+            
+
+  <div class="texte">
+    <p id="text"></p>
+  </div>
+
+
+
+  <div class="book-area">
+    <!-- tranche -->
+    <img src="../../public/images/Etape1_Tranche.png" alt="Tranche du livre" class="tranche base">
+    <img src="../../public/images/Etape2_Tranche.png" alt="Tranche révélée" class="tranche reveal" id="revealImage">
+
+    <!-- pinceau -->
+    <img src="../../public/images/pinceau 2.png" alt="Pinceau" class="brush" id="brush">
+
+    <img src="../../public/images/Louis.png" class="Louis" id="Louis">
+
+    <!-- conteneur du cercle et du popup -->
+    <div class="circle-container">
+      <img src="../../public/images/main.gif" alt="gif main" class="main" id="main">
+      <div class="circle" id="circle"></div>
+      <img src="../../public/images/popup.svg" alt="Popup image" class="popup" id="popup">
+    </div>
+  </div>
+  <img src="../../public/images/logoBnF.png" alt="Logo de la BnF" class="logo-bnf">
+
+  <!--json
+  <script>
+    fetch('/public/data/brush.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erreur de chargement du JSON');
+        }
+        return response.json();
+      })
+      .then(data => {
+        document.getElementById('text').innerHTML = data.texte;
+      })
+      .catch(error => console.error(error));
+  </script>-->
+  <script src="../../scripts/brush.js"></script>
+
+</body>
+
+</html>
