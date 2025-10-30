@@ -13,8 +13,6 @@ body {
   src: url("ressources/VelinoText-Light.otf");
 }
 
-
-
 #reliure {
   animation: reliure 5s ease-in-out infinite;
 }
@@ -25,7 +23,7 @@ body {
 .menu-images {
   width:100%;
   height:100vh;
-  overflow-y:hidden;
+  overflow:hidden;
   display: grid;
   grid-template-columns: 50% 50%;
   animation: menu-images-animation 5s ease-in-out infinite;
