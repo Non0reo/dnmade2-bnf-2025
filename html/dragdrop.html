@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/views/dragdrop.css">
+  <title>Drag and drop</title>
+</head>
+
+<body>
+  <div class="texte">
+    <p>En mai 1791, le roi Louis XVI fait transférer la reliure et d'autres objets précieux à la Bibliothèque royale (future BnF) pour les protéger des destructions. Entre 1791 et 1802, de nombreuses pierres précieuses et perles disparaissent, arrachées de la reliure en or.<br><br><span>Glissez les pierres précieuses hors de l'Évangéliaire pour les protéger.</span></p>
+  </div>
+  <div class="dragdrop">
+    <div class="container">
+      <div class="evangeliaire">
+        <img class="main" src="../public/images/main.png" alt="main">
+        <img class="BOOK" src="../public/images/book.png" alt="livre">
+        <div class="gem bleue1" style="background-image: url('../public/images/bleue.png');"></div>
+        <div class="gem bleue2" style="background-image: url('../public/images/bleue.png');"></div>
+        <div class="gem emeraude" style="background-image: url('../public/images/emeraude.png');"></div>
+        <div class="gem rubis" style="background-image: url('../public/images/rubis.png');"></div>
+        <div class="gem saphir" style="background-image: url('../public/images/saphir.png');"></div>
+        <div class="gem perle" style="background-image: url('../public/images/perle.png');"></div>
+      </div>
+      <div class="dropzones">
+        <div class="dropzone"></div>
+        <div class="dropzone"></div>
+        <div class="dropzone"></div>
+        <div class="dropzone"></div>
+        <div class="dropzone"></div>
+        <div class="dropzone"></div>
+      </div>
+    </div>
+  </div>
+  <img src="../public/images/logoBnF.png" alt="Logo de la BnF" class="logo-bnf">
+  <script src="../scripts/dragdrop.js"></script>
+  <!--<script>
+    fetch('/public/data/dragdrop.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erreur de chargement du JSON');
+        }
+        return response.json();
+      })
+      .then(data => {
+        document.getElementById('text').innerHTML = data.texte;
+      })
+      .catch(error => console.error(error));
+  </script>-->
+
+</body>
+
+</html>
