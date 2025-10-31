@@ -20,6 +20,17 @@ body {
   animation: histoire2 5s ease-in-out infinite;
 }
 
+#link-credit{
+  z-index:100;
+  color:white;
+  font-size: 2rem;
+  font-family: "TextLight";
+  position:absolute;
+  bottom:3%;
+  right:3%;
+  text-decoration-line: none;
+}
+
 .menu-images {
   width:100%;
   height:100vh;
