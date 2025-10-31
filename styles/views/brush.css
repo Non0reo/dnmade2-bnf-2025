@@ -92,16 +92,14 @@ body {
     transform-origin: bottom left;
     cursor: pointer;
     animation: pulse 3s ease-in-out;
-    transition: transform 4s ease-in-out, filter 0.3s;
+    user-select: none;
     z-index: 2;
 }
 
 @keyframes pulse {
 
     0%,
-    100% {
-        transform: translate(-50%, -40%) scale(1);
-    }
+    100% { transform: translate(-50%, -40%) scale(1); }
 
     50% {
         transform: translate(-50%, -40%) scale(1.1);
@@ -109,9 +107,13 @@ body {
     }
 }
 
+@keyframes swing {
+    from { transform: translate(-50%, -40%) rotate(0deg); }
+    to { transform: translate(-50%, -40%) rotate(75deg) scale(1.1); }
+}
+
 .brush.active {
-    animation: none;
-    transform: translate(-50%, -40%) rotate(75deg) scale(1.1);
+    animation: swing 4s ease-in-out forwards;
 }
 
 /* Conteneur cercle + popup */
