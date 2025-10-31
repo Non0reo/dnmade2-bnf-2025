@@ -1,0 +1,286 @@
+body {
+  width: 1920px;
+  height: 1080px;
+  background-color: #252525;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "Injurial-Regular";
+  src: url("../public/fonts/Injurial/205TF-Injurial-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "VelinoText-Thin";
+  src: url("../public/fonts/VELINO Text/VelinoText-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "VelinoText-Light";
+  src: url("../public/fonts/VELINO Text/VelinoText-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "VelinoText-Medium";
+  src: url("../public/fonts/VELINO Text/VelinoText-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "VelinoText-Bold";
+  src: url("../public/fonts/VELINO Text/VelinoText-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "VelinoText-Black";
+  src: url("../public/fonts/VELINO Text/VelinoText-Black.otf") format("opentype");
+}
+
+#container-zoom-reliure {
+  width: 100vw;
+  height: 100vh;
+}
+
+.reliure {
+  width: 985px;
+  height: 985px;
+  display: flex;
+  position: relative;
+  top: 62px;
+  right: 95px; /* 55px de base --- +40px right */
+}
+
+h1 {
+  font-family: "VelinoText-Medium";
+  line-height: 1.15;
+  letter-spacing: normal;
+  font-size: 30px;
+  color: #ffffff;
+
+  display: flex;
+  position: relative;
+  justify-content: end;
+  flex-direction: row;
+  top: -735px;
+  right: 105px;
+}
+
+.bouton-termine {
+  display: block;
+  position: absolute;
+  bottom: 510px;
+  left: 1520px;
+  width: 300px;
+  height: 100px;
+}
+
+.cercle-zoom1 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  bottom: 810px;
+  left: 138px;
+  width: 155px;
+  height: 155px;
+}
+
+.cercle-zoom2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  bottom: 538px;
+  left: 198px;
+  width: 120px;
+  height: 120px;
+}
+
+.cercle-zoom3 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  bottom: 552px;
+  left: 320px;
+  width: 180px;
+  height: 180px;
+}
+
+.cercle-zoom4 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  bottom: 140px;
+  left: 440px;
+  width: 175px;
+  height: 175px;
+}
+
+#logo-bnf {
+  display: block;
+  position: absolute;
+  bottom: 85px;
+  left: 1690px;
+}
+
+.lumiere-cercle1 {
+  display: block;
+  position: absolute;
+  z-index: 6;
+  bottom: 750px;
+  left: 62px;
+  width: 295px;
+  height: 295px;
+  opacity: 0.65;
+  filter: blur(1px);
+}
+
+.lumiere-cercle2 {
+  display: block;
+  position: absolute;
+  z-index: 6;
+  bottom: 460px;
+  left: 112px;
+  width: 295px;
+  height: 295px;
+  opacity: 0.65;
+  filter: blur(1px);
+}
+
+.lumiere-cercle3 {
+  display: block;
+  position: absolute;
+  z-index: 6;
+  bottom: 445px;
+  left: 204px;
+  width: 410px;
+  height: 410px;
+  opacity: 0.65;
+  filter: blur(1px);
+}
+
+.lumiere-cercle4 {
+  display: block;
+  position: absolute;
+  z-index: 6;
+  bottom: -21px;
+  left: 273px;
+  width: 510px;
+  height: 510px;
+  opacity: 0.86;
+  filter: blur(1px);
+}
+
+.zoom-grand,
+.zoom-petit {
+  display: flex;
+  position: absolute;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.bleu1 {
+  top: 490px;
+  left: 885px;
+  width: 31%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.bleu2 {
+  top: 610px;
+  left: 1525px;
+  width: 15%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.femme1 {
+  top: 490px;
+  left: 885px;
+  width: 31%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.femme2 {
+  top: 610px;
+  left: 1525px;
+  width: 15%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.jesus1 {
+  top: 490px;
+  left: 885px;
+  width: 31%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.jesus2 {
+  top: 610px;
+  left: 1525px;
+  width: 15%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.bas1 {
+  top: 490px;
+  left: 885px;
+  width: 31%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.bas2 {
+  top: 610px;
+  left: 1525px;
+  width: 15%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.traits {
+  display: flex;
+  position: absolute;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.trait-1 {
+  top: 190px;
+  left: 270px;
+  width: 32.5%;
+  opacity: 0;
+}
+
+.trait-2 {
+  top: 442px;
+  left: 473px;
+  width: 23%;
+  opacity: 0;
+}
+
+.trait-3 {
+  top: 509px;
+  left: 289px;
+  width: 32.5%;
+  opacity: 0;
+}
+
+.trait-4 {
+  top: 686px;
+  left: 574px;
+  width: 20%;
+  opacity: 0;
+}
+
+
+
+.active {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
