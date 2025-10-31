@@ -19,3 +19,8 @@
     font-family: 'VelinoText-LightItalic';
     src: url('../public/fonts/VELINO Text/VelinoText-LightItalic.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'VelinoText-Medium';
+    src: url('../public/fonts/VELINO Text/VelinoText-Medium.otf') format('opentype');
+}
