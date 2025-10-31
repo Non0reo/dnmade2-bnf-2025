@@ -1,33 +1,16 @@
-body {
+/* body {
   background-color: #252525;
   width: 1920px;
   height: 1080px;
   margin: 0px;
+} */
+
+header {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  z-index: 1000;
 }
-
-
-
-@font-face {
-  font-family: "Injurial-Regular";
-  src: url("../public/fonts/205TF-Injurial-Regular.otf") format(opentype);
-}
-
-@font-face {
-  font-family: "VelinoText-Medium";
-  src: url("../public/fonts/VelinoText-Medium.otf");
-}
-
-@font-face {
-  font-family: "VelinoText-Bold";
-  src: url("../public/fonts/VelinoText-Bold.otf");
-}
-
-@font-face {
-  font-family: "VelinoText-Black";
-  src: url("../public/fonts/VelinoText-Black.otf");
-}
-
-
 
 @keyframes traitAppear {
   0% {
@@ -65,12 +48,11 @@ body {
   }
 }
 
-
-
 ol {
   display: flex;
   justify-content: center;
   position: relative;
+  z-index: 100;
   top: 100px;
   margin: 0px 150px 200px 150px;
   height: 8px;
@@ -79,63 +61,80 @@ ol {
 
 ol.step-1 {
   background: #252525;
-  background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%,
-      rgba(119, 85, 0, 1) 3.5%,
-      rgba(236, 169, 0, 1) 8.5%,
-      rgba(119, 85, 0, 1) 13.5%,
-      rgba(119, 85, 0, 1) 92%,
-      rgba(37, 37, 37, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 37, 37, 1) 0%,
+    rgba(119, 85, 0, 1) 3.5%,
+    rgba(236, 169, 0, 1) 8.5%,
+    rgba(119, 85, 0, 1) 13.5%,
+    rgba(119, 85, 0, 1) 92%,
+    rgba(37, 37, 37, 1) 100%
+  );
 }
 
 ol.step-2 {
   background: #252525;
-  background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%,
-      rgba(119, 85, 0, 1) 6.5%,
-      rgba(119, 85, 0, 1) 21.5%,
-      rgba(236, 169, 0, 1) 26.5%,
-      rgba(119, 85, 0, 1) 31.5%,
-      rgba(119, 85, 0, 1) 90%,
-      rgba(37, 37, 37, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 37, 37, 1) 0%,
+    rgba(119, 85, 0, 1) 6.5%,
+    rgba(119, 85, 0, 1) 21.5%,
+    rgba(236, 169, 0, 1) 26.5%,
+    rgba(119, 85, 0, 1) 31.5%,
+    rgba(119, 85, 0, 1) 90%,
+    rgba(37, 37, 37, 1) 100%
+  );
 }
 
 ol.step-3 {
   background: #252525;
-  background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%,
-      rgba(119, 85, 0, 1) 6.5%,
-      rgba(119, 85, 0, 1) 40%,
-      rgba(236, 169, 0, 1) 45%,
-      rgba(119, 85, 0, 1) 50%,
-      rgba(119, 85, 0, 1) 90%,
-      rgba(37, 37, 37, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 37, 37, 1) 0%,
+    rgba(119, 85, 0, 1) 6.5%,
+    rgba(119, 85, 0, 1) 40%,
+    rgba(236, 169, 0, 1) 45%,
+    rgba(119, 85, 0, 1) 50%,
+    rgba(119, 85, 0, 1) 90%,
+    rgba(37, 37, 37, 1) 100%
+  );
 }
 
 ol.step-4 {
   background: #252525;
-  background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%,
-      rgba(119, 85, 0, 1) 6.5%,
-      rgba(119, 85, 0, 1) 58.5%,
-      rgba(236, 169, 0, 1) 63.5%,
-      rgba(119, 85, 0, 1) 68.5%,
-      rgba(119, 85, 0, 1) 90%,
-      rgba(37, 37, 37, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 37, 37, 1) 0%,
+    rgba(119, 85, 0, 1) 6.5%,
+    rgba(119, 85, 0, 1) 58.5%,
+    rgba(236, 169, 0, 1) 63.5%,
+    rgba(119, 85, 0, 1) 68.5%,
+    rgba(119, 85, 0, 1) 90%,
+    rgba(37, 37, 37, 1) 100%
+  );
 }
 
 ol.step-5 {
   background: #252525;
-  background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%,
-      rgba(119, 85, 0, 1) 6.5%,
-      rgba(119, 85, 0, 1) 77%,
-      rgba(236, 169, 0, 1) 82%,
-      rgba(119, 85, 0, 1) 87%,
-      rgba(119, 85, 0, 1) 90%,
-      rgba(37, 37, 37, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 37, 37, 1) 0%,
+    rgba(119, 85, 0, 1) 6.5%,
+    rgba(119, 85, 0, 1) 77%,
+    rgba(236, 169, 0, 1) 82%,
+    rgba(119, 85, 0, 1) 87%,
+    rgba(119, 85, 0, 1) 90%,
+    rgba(37, 37, 37, 1) 100%
+  );
 }
 
 li {
   position: relative;
   display: inline-block;
   width: 150px;
-  font: bold 14px;
+  /* font: bold 14px; */
+  font-weight: bold;
+  font-size: 14px;
   height: 50px;
 }
 
@@ -145,22 +144,21 @@ li .annee {
   left: -75px;
   color: #775500;
   transition: all 0.25s;
-  font-family: "VelinoText-Black";
+  font-family: 'VelinoText-Black';
   font-size: 24px;
 }
 
 li .point {
-  top: -9px;
-  left: -25.8%;
-  /* 41% de base */
-  display: block;
-  width: 10px;
-  height: 10px;
-  border: 7px solid #775500;
-  border-radius: 15px;
-  background: #252525;
-  position: absolute;
-  transition: all 0.30s;
+    top: -7px;
+    left: -28.8%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 6px solid #775500;
+    border-radius: 15px;
+    background: #252525;
+    position: absolute;
+    transition: all 0.3s;
 }
 
 li .point:hover {
@@ -168,15 +166,14 @@ li .point:hover {
 }
 
 li .point.active {
-  top: -11px;
-  left: -27.45%;
-  /* 39.45% de base */
-  width: 20px;
-  height: 20px;
-  border: 4px solid #eca900;
-  border-radius: 20px;
-  background: white;
-  transition: all 0.30s;
+    top: -9px;
+    left: -30.5%;
+    width: 25px;
+    height: 25px;
+    border: 5px solid #eca900;
+    border-radius: 20px;
+    background: white;
+    transition: all 0.3s;
 }
 
 li .annee.active {
@@ -184,13 +181,13 @@ li .annee.active {
 }
 
 li .vl {
-  position: absolute;
-  left: -28px;
-  border-left: 2px dashed white;
-  height: 120px;
-  width: 1px;
-  opacity: 0;
-  transition: all 0.35s;
+    position: absolute;
+    left: -34.25px;
+    border-left: 2px dashed white;
+    height: 120px;
+    width: 1px;
+    opacity: 0;
+    transition: all 0.35s;
 }
 
 li .vl.active {
@@ -214,7 +211,7 @@ ul li p.description {
   position: absolute;
   color: #d5be87;
   margin-top: 20px;
-  font-family: "VelinoText-Bold";
+  font-family: 'VelinoText-Bold';
   width: 250px;
   opacity: 0;
   transition: all 0.35s;
@@ -226,21 +223,25 @@ ul li p.description.active {
   opacity: 1;
   transition: all 0.35s;
   animation: descriptionAppear 600ms ease-in-out;
+  top: 8px;
+
+  /* 39.45% de base */
 }
 
 li span.pointBas {
-  position: absolute;
-  top: 103px;
-  left: -32.8px;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border: none;
-  border-radius: 15px;
-  background: #D5BE87;
-  position: absolute;
-  transition: all 0.35s;
-  opacity: 0;
+    position: absolute;
+    top: 103px;
+    left: -39.8px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 15px;
+    background: #d5be87;
+    z-index: 100;
+    position: absolute;
+    transition: all 0.35s;
+    opacity: 0;
 }
 
 li span.pointBas.active {
@@ -266,6 +267,7 @@ li span.pointBas.active {
   transition: all 0.15s;
   width: 60px;
   height: 60px;
+  z-index: 100;
 }
 
 #bouton-retour-hover {
@@ -277,4 +279,7 @@ li span.pointBas.active {
   transition: all 0.15s;
   width: 60px;
   height: 60px;
+  z-index: 100;
 }
+
+

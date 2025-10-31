@@ -3,6 +3,8 @@ body {
   height: 1080px;
   background-color: #252525;
   margin: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 @font-face {

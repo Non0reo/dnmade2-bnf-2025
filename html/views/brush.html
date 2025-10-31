@@ -6,9 +6,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>brush</title>
   <link rel="stylesheet" href="../../styles/views/brush.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/frise.css">
 </head>
 
 <body>
+
+  <header>
+
+    <div class="nav-container">
+
+      <nav>
+        <ol class="step-2">
+
+          
+          <li class="categories">
+            <a href="../FeatherInteractive.html">
+              <div class="vl"></div>
+              <p class="annee" id="annee-1">10e siècle</p>
+              <span class="point" id="point-1"></span>
+            </a>
+          </li>
+
+          <li class="categories">
+            <a href="./brush.html">
+              <div class="vl active"></div>
+              <p class="annee active" id="annee-2">13e siècle</p>
+              <span class="point active" id="point-2"></span>
+            </a>
+          </li>
+
+          <li class="categories">
+            <a href="../scratch-card.html">
+              <div class="vl"></div>
+              <p class="annee" id="annee-3">14e siècle</p>
+              <span class="point" id="point-3"></span>
+            </a>
+          </li>
+
+          <li class="categories">
+            <a href="../dragdrop.html">
+              <div class="vl"></div>
+              <p class="annee" id="annee-4">En 1791</p>
+              <span class="point" id="point-4"></span>
+            </a>
+          </li>
+
+          <li class="categories">
+            <a href="../zoom-reliure.html">
+              <div class="vl"></div>
+              <p class="annee" id="annee-5">Aujourd'hui</p>
+              <span class="point" id="point-5"></span>
+            </a>
+          </li>
+
+        </ol>
+      </nav>
+
+      <ul class="descriptionContainer">
+        <li class="texte-frise">
+          <p class="description" id="description-1">UNE COMMANDE IMPÉRIALE</p>
+          <span class="pointBas"></span>
+        </li>
+        <li class="texte-frise">
+          <p class="description active" id="description-2">UN MANUSCRIT DE SAINT LOUIS</p>
+          <span class="pointBas active"></span>
+        </li>
+        <li class="texte-frise">
+          <p class="description" id="description-3">DON DE CHARLES V À LA SAINTE CHAPELLE</p>
+          <span class="pointBas"></span>
+        </li>
+        <li class="texte-frise">
+          <p class="description" id="description-4">DÉGRADÉE LORS DE LA RÉVOLUTION</p>
+          <span class="pointBas"></span>
+        </li>
+        <li class="texte-frise">
+          <p class="description" id="description-5">UNE RELIURE RESTAURÉE ET ANALYSÉE</p>
+          <span class="pointBas"></span>
+        </li>
+      </ul>
+      <a href="../../index.html">
+        <img src="../../public/images/bouton-retour-hover.svg" id="bouton-retour-hover" />
+        <img src="../../public/images/bouton-retour-base.svg" id="bouton-retour" />
+      </a>
+      
+    </div>
+
+
+  </header>
   <!--<p id="text"></p>
   <script type="module">
     import data from 'public/data/brush.json' assert { type: 'json' };
@@ -19,7 +104,7 @@
 <p>Ce manuscrit devient la propriété du roi de France Louis IX, connu sous le nom de Saint Louis, qui régna de 1226 à 1270. Les tranches du manuscrit sont alors peintes de fleurs de lys (emblème des rois de France) et des tours de Castille (emblème de la mère du roi, Blanche de Castille).
 <br><br>
 Le plat en or portant le Christ sur la croix créé vers 1260-1270 a peut-être été commandé par Saint Louis.
-<br><br><span>Touchez le pinceau pour découvrir la tranche.</span></p>
+<br><br><span class="jaune">Touchez le pinceau pour découvrir la tranche.</span></p>
 </div>
             
 
@@ -63,6 +148,7 @@ Le plat en or portant le Christ sur la croix créé vers 1260-1270 a peut-être 
       .catch(error => console.error(error));
   </script>-->
   <script src="../../scripts/brush.js"></script>
+  <script src="../../scripts/frise.js"></script>
 
 </body>
 

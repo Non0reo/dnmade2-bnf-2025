@@ -17,7 +17,7 @@ SideChapelleHomepage.addEventListener('click', () => {
 
   videoTuto.addEventListener('ended', () => {
     document.body.removeChild(videoTuto);
-    window.location.href = './html/views/brush.html';
+    window.location.href = './html/FeatherInteractive.html';
 
 
   });

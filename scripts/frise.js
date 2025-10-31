@@ -5,8 +5,6 @@ let descriptions;
 let pointsBas;
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Set the initial step-1 class when the page loads
-  document.querySelector('ol').classList.add('step-1');
 
   points = document.getElementsByClassName('point')
   annees = document.getElementsByClassName('annee')

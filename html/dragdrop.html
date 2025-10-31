@@ -5,12 +5,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/views/dragdrop.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/frise.css">
   <title>Drag and drop</title>
 </head>
 
 <body>
+
+  <header>
+
+    <div class="nav-container">
+
+      <nav>
+        <ol class="step-4">
+
+          
+          <li class="categories">
+            <a href="./FeatherInteractive.html">
+              <div class="vl"></div>
+              <p class="annee" id="annee-1">10e siècle</p>
+              <span class="point" id="point-1"></span>
+            </a>
+          </li>
+
+          <li class="categories">
+            <a href="./views/brush.html">
+              <div class="vl "></div>
+              <p class="annee " id="annee-2">13e siècle</p>
+              <span class="point " id="point-2"></span>
+            </a>
+          </li>
+
+          <li class="categories">
+            <a href="./scratch-card.html">
+              <div class="vl"></div>
+              <p class="annee" id="annee-3">14e siècle</p>
+              <span class="point" id="point-3"></span>
+            </a>
+          </li>
+
+          <li class="categories">
+            <a href="./dragdrop.html">
+              <div class="vl active"></div>
+              <p class="annee active" id="annee-4">En 1791</p>
+              <span class="point active" id="point-4"></span>
+            </a>
+          </li>
+
+          <li class="categories">
+            <a href="./zoom-reliure.html">
+              <div class="vl"></div>
+              <p class="annee" id="annee-5">Aujourd'hui</p>
+              <span class="point" id="point-5"></span>
+            </a>
+          </li>
+
+        </ol>
+      </nav>
+
+      <ul class="descriptionContainer">
+        <li class="texte-frise">
+          <p class="description" id="description-1">UNE COMMANDE IMPÉRIALE</p>
+          <span class="pointBas"></span>
+        </li>
+        <li class="texte-frise">
+          <p class="description " id="description-2">UN MANUSCRIT DE SAINT LOUIS</p>
+          <span class="pointBas "></span>
+        </li>
+        <li class="texte-frise">
+          <p class="description" id="description-3">DON DE CHARLES V À LA SAINTE CHAPELLE</p>
+          <span class="pointBas"></span>
+        </li>
+        <li class="texte-frise">
+          <p class="description active" id="description-4">DÉGRADÉE LORS DE LA RÉVOLUTION</p>
+          <span class="pointBas active"></span>
+        </li>
+        <li class="texte-frise">
+          <p class="description" id="description-5">UNE RELIURE RESTAURÉE ET ANALYSÉE</p>
+          <span class="pointBas"></span>
+        </li>
+      </ul>
+      <a href="../index.html">
+        <img src="../public/images/bouton-retour-hover.svg" id="bouton-retour-hover" />
+        <img src="../public/images/bouton-retour-base.svg" id="bouton-retour" />
+      </a>
+      
+    </div>
+
+
+  </header>
+
+  
+
+
   <div class="texte">
-    <p>En mai 1791, le roi Louis XVI fait transférer la reliure et d'autres objets précieux à la Bibliothèque royale (future BnF) pour les protéger des destructions. Entre 1791 et 1802, de nombreuses pierres précieuses et perles disparaissent, arrachées de la reliure en or.<br><br><span>Glissez les pierres précieuses hors de l'Évangéliaire pour les protéger.</span></p>
+    <p>En mai 1791, le roi Louis XVI fait transférer la reliure et d'autres objets précieux à la Bibliothèque royale
+      (future BnF) pour les protéger des destructions. Entre 1791 et 1802, de nombreuses pierres précieuses et perles
+      disparaissent, arrachées de la reliure en or.<br><br><span class="jaune">Glissez les pierres précieuses hors de l'Évangéliaire
+        pour les protéger.</span></p>
   </div>
   <div class="dragdrop">
     <div class="container">
@@ -36,6 +128,7 @@
   </div>
   <img src="../public/images/logoBnF.png" alt="Logo de la BnF" class="logo-bnf">
   <script src="../scripts/dragdrop.js"></script>
+  <script src="../scripts/frise.js"></script>
   <!--<script>
     fetch('/public/data/dragdrop.json')
       .then(response => {

@@ -1,6 +1,8 @@
-*{
+/* *{
     margin-top: 10px;
-}
+} */
+
+
 
 .texte {
     color: white;
@@ -13,6 +15,7 @@
     margin-left: 80px;
     padding: 15px;
     display: flex;
+    margin-top: 60px;
 
 }
 
@@ -25,7 +28,7 @@
 }
 
 
-span {
+span.jaune {
     color: #ECA900;
     display: block;
     margin-top: 10px;
