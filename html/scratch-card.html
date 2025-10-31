@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/scratch-card.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div id="fond_gratte"></div>
+    <img
+      id="charles"
+      src="../public/images/scratch-card/charles_V.svg"
+      alt="charles_V.svg"
+    />
+    <div class="gradient_1"></div>
+    <div class="gradient_2"></div>
+    <div id="logo">
+      <img
+        id="logo_BnF"
+        src="../public/images/scratch-card/logo.svg"
+        alt="logo.svg"
+      />
+    </div>
+    <div id="miseEnPage_lo">
+      <div id="text">
+        <p class="text_blanc">
+          Le manuscrit passe à Charles V qui règne de 1364 à 1380. En 1379, il
+          l'offre à la Sainte-Chapelle de Paris, fondée par Saint Louis, et fait
+          réaliser en 1379 le plat supérieur en argent représentant saint Jean
+          en train d'écrire. <br /><br />
+          Le plat de la Crucifixion est très probablement modifié à cette
+          occasion, notamment par des ajouts de pierres précieuses..
+        </p>
+        <p class="text_orange">
+          Gravez l’argent et découvrez le nouveau plat supérieur.
+        </p>
+      </div>
+      <img src="../public/images/scratch-card/Main.png" alt="" id="main" />
+
+      <div id="container_lo">
+        <div id="container_am">
+          <canvas width="700" height="600" id="canvas_gratte"></canvas>
+          <div class="finished_lo"></div>
+          <img id="livre_am" src="../public/images/scratch-card/livre.png" />
+          <div id="container_pe_button_modal">
+            <!-- <div class="rattrapage_lo">
+                <div class="pe_cercle_invisible" id="pe_cercle_invisible_1">
+                    <div class="circle_pe"></div>
+                    <svg class="halo_lo">
+                    <circle
+                        cx="50"
+                        cy="50"
+                        r="40"
+                        style="fill: none; stroke-width: 2; stroke: white"
+                    />
+                    </svg>
+                </div>
+                <div class="pe_cercle_invisible" id="pe_cercle_invisible_2">
+                    <div class="circle_pe"></div>
+                    <svg class="halo_lo">
+                    <circle
+                        cx="50"
+                        cy="50"
+                        r="40"
+                        style="fill: none; stroke-width: 2; stroke: white"
+                    />
+                    </svg>
+                </div>
+            </div>
+            <div class="rattrapage_lo">
+              <div class="pe_cercle_invisible" id="pe_cercle_invisible_3">
+                <div class="circle_pe"></div>
+                <svg>
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    style="fill: none; stroke-width: 2; stroke: white"
+                  />
+                </svg>
+              </div>
+              <div class="pe_cercle_invisible" id="pe_cercle_invisible_4">
+                <div class="circle_pe"></div>
+                <svg>
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    style="fill: none; stroke-width: 2; stroke: white"
+                  />
+                </svg>
+              </div>
+            </div> -->
+            <div class="pe_cercle_invisible" id="pe_cercle_invisible_1">
+              <div class="circle_pe"></div>
+              <svg class="halo_lo">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  style="fill: none; stroke-width: 2; stroke: white"
+                />
+              </svg>
+            </div>
+            <div class="pe_cercle_invisible" id="pe_cercle_invisible_2">
+              <div class="circle_pe"></div>
+              <svg class="halo_lo">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  style="fill: none; stroke-width: 2; stroke: white"
+                />
+              </svg>
+            </div>
+            <div class="pe_cercle_invisible" id="pe_cercle_invisible_3">
+              <div class="circle_pe"></div>
+              <svg>
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  style="fill: none; stroke-width: 2; stroke: white"
+                />
+              </svg>
+            </div>
+            <div class="pe_cercle_invisible" id="pe_cercle_invisible_4">
+              <div class="circle_pe"></div>
+              <svg>
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  style="fill: none; stroke-width: 2; stroke: white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div rel="preload" class="img_gratte_invisible" id="pe_modal_grand_1">
+        <span class="modal-backdrop" id="pe_modal_grand_backdrop_1"></span>
+        <svg class="pe_svg">
+          <line
+            x1="65"
+            y1="145"
+            x2="65"
+            y2="98.5"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="65"
+            y1="100"
+            x2="450"
+            y2="100"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="450"
+            y1="99"
+            x2="450"
+            y2="241.5"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="450"
+            y1="240"
+            x2="510"
+            y2="240"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+        <div class="pe_part_2_tab_gratte">
+          <img
+            class="pe_img_modal_rond"
+            src="../public/images/scratch-card/aigle.png"
+            alt=""
+          />
+          <p id="sous-text">Saint-Jean</p>
+        </div>
+      </div>
+      <div rel="preload" class="img_gratte_invisible" id="pe_modal_grand_2">
+        <span class="modal-backdrop" id="pe_modal_grand_backdrop_2"></span>
+        <svg class="pe_svg">
+          <line
+            x1="285"
+            y1="185"
+            x2="450"
+            y2="185"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="450"
+            y1="185"
+            x2="450"
+            y2="240"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="450"
+            y1="240"
+            x2="510"
+            y2="240"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+        <div class="pe_part_2_tab_gratte">
+          <img
+            class="pe_img_modal_rond"
+            src="../public/images/scratch-card/ange.png"
+            alt=""
+          />
+          <p id="sous-text">Saint-Mathieu</p>
+        </div>
+      </div>
+      <div rel="preload" class="img_gratte_invisible" id="pe_modal_grand_3">
+        <span class="modal-backdrop" id="pe_modal_grand_backdrop_3"></span>
+        <svg class="pe_svg">
+          <line
+            x1="65"
+            y1="455"
+            x2="65"
+            y2="470"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="65"
+            y1="470"
+            x2="450"
+            y2="470"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="450"
+            y1="470"
+            x2="450"
+            y2="249"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="450"
+            y1="250"
+            x2="518"
+            y2="250"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+        <div class="pe_part_2_tab_gratte">
+          <img
+            class="pe_img_modal_rond"
+            src="../public/images/scratch-card/lion.png"
+            alt=""
+          />
+          <p id="sous-text">Saint-Marc</p>
+        </div>
+      </div>
+      <div rel="preload" class="img_gratte_invisible" id="pe_modal_grand_4">
+        <span class="modal-backdrop" id="pe_modal_grand_backdrop_4"></span>
+        <svg class="pe_svg">
+          <line
+            x1="286"
+            y1="415"
+            x2="450.5"
+            y2="415"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="450"
+            y1="415"
+            x2="450"
+            y2="239"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="450"
+            y1="240"
+            x2="515"
+            y2="240"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+        <div class="pe_part_2_tab_gratte">
+          <img
+            class="pe_img_modal_rond"
+            src="../public/images/scratch-card/chevre.png"
+            alt=""
+          />
+          <p id="sous-text">Saint-Luc</p>
+        </div>
+      </div>
+    </div>
+    <img src="../public/images/scratch-card/scalpel.png" alt="" id="scalpel" />
+    <script src="../scripts/scratch-card.js" defer></script>
+  </body>
+</html>
