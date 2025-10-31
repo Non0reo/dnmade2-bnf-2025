@@ -38,8 +38,9 @@ body {
 }
 
 #container-zoom-reliure {
+  margin-top: 5vh;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
 }
 
 .reliure {
@@ -78,8 +79,8 @@ h1 {
 .cercle-zoom1 {
   display: block;
   position: absolute;
-  z-index: 10;
-  bottom: 810px;
+  z-index: 1000;
+  bottom: 766px;
   left: 138px;
   width: 155px;
   height: 155px;
@@ -89,7 +90,7 @@ h1 {
   display: block;
   position: absolute;
   z-index: 10;
-  bottom: 538px;
+  bottom: 494px;
   left: 198px;
   width: 120px;
   height: 120px;
@@ -99,7 +100,7 @@ h1 {
   display: block;
   position: absolute;
   z-index: 10;
-  bottom: 552px;
+  bottom: 508px;
   left: 320px;
   width: 180px;
   height: 180px;
@@ -109,7 +110,7 @@ h1 {
   display: block;
   position: absolute;
   z-index: 10;
-  bottom: 140px;
+  bottom: 96px;
   left: 440px;
   width: 175px;
   height: 175px;
@@ -125,8 +126,8 @@ h1 {
 .lumiere-cercle1 {
   display: block;
   position: absolute;
-  z-index: 6;
-  bottom: 750px;
+  z-index: 600;
+  bottom: 706px;
   left: 62px;
   width: 295px;
   height: 295px;
@@ -138,7 +139,7 @@ h1 {
   display: block;
   position: absolute;
   z-index: 6;
-  bottom: 460px;
+  bottom: 416px;
   left: 112px;
   width: 295px;
   height: 295px;
@@ -150,7 +151,7 @@ h1 {
   display: block;
   position: absolute;
   z-index: 6;
-  bottom: 445px;
+  bottom: 401px;
   left: 204px;
   width: 410px;
   height: 410px;
@@ -162,7 +163,7 @@ h1 {
   display: block;
   position: absolute;
   z-index: 6;
-  bottom: -21px;
+  bottom: -65px;
   left: 273px;
   width: 510px;
   height: 510px;
@@ -179,7 +180,7 @@ h1 {
 }
 
 .bleu1 {
-  top: 490px;
+  top: 534px;
   left: 885px;
   width: 31%;
   z-index: 5;
@@ -187,7 +188,7 @@ h1 {
 }
 
 .bleu2 {
-  top: 610px;
+  top: 654px;
   left: 1525px;
   width: 15%;
   z-index: 5;
@@ -195,7 +196,7 @@ h1 {
 }
 
 .femme1 {
-  top: 490px;
+  top: 534px;
   left: 885px;
   width: 31%;
   z-index: 5;
@@ -203,7 +204,7 @@ h1 {
 }
 
 .femme2 {
-  top: 610px;
+  top: 654px;
   left: 1525px;
   width: 15%;
   z-index: 5;
@@ -211,7 +212,7 @@ h1 {
 }
 
 .jesus1 {
-  top: 490px;
+  top: 534px;
   left: 885px;
   width: 31%;
   z-index: 5;
@@ -219,7 +220,7 @@ h1 {
 }
 
 .jesus2 {
-  top: 610px;
+  top: 654px;
   left: 1525px;
   width: 15%;
   z-index: 5;
@@ -227,7 +228,7 @@ h1 {
 }
 
 .bas1 {
-  top: 490px;
+  top: 534px;
   left: 885px;
   width: 31%;
   z-index: 5;
@@ -235,7 +236,7 @@ h1 {
 }
 
 .bas2 {
-  top: 610px;
+  top: 654px;
   left: 1525px;
   width: 15%;
   z-index: 5;
@@ -250,28 +251,28 @@ h1 {
 }
 
 .trait-1 {
-  top: 190px;
+  top: 234px;
   left: 270px;
   width: 32.5%;
   opacity: 0;
 }
 
 .trait-2 {
-  top: 442px;
+  top: 486px;
   left: 473px;
   width: 23%;
   opacity: 0;
 }
 
 .trait-3 {
-  top: 509px;
+  top: 553px;
   left: 289px;
   width: 32.5%;
   opacity: 0;
 }
 
 .trait-4 {
-  top: 686px;
+  top: 730px;
   left: 574px;
   width: 20%;
   opacity: 0;

@@ -55,6 +55,7 @@ ol {
   z-index: 100;
   top: 100px;
   margin: 0px 150px 200px 150px;
+  width: 1590px;
   height: 8px;
   gap: 150px;
 }
@@ -260,7 +261,7 @@ li span.pointBas.active {
 
 #bouton-retour {
   position: absolute;
-  margin-left: 80px;
+  margin-left: 120px;
   display: flex;
   top: 75px;
   right: 8vw;
@@ -272,7 +273,7 @@ li span.pointBas.active {
 
 #bouton-retour-hover {
   position: absolute;
-  margin-left: 0px;
+  margin-left: 40px;
   display: flex;
   top: 75px;
   right: 8vw;
