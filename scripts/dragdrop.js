@@ -55,21 +55,40 @@ function drop(e) {
     const gemRect = draggedGem.getBoundingClientRect();
 
     dropzones.forEach(zone => {
-        const rect = zone.getBoundingClientRect();
-        const gx = gemRect.left + gemRect.width / 2;
-        const gy = gemRect.top + gemRect.height / 2;
+    const rect = zone.getBoundingClientRect();
+    const gx = gemRect.left + gemRect.width / 2;
+    const gy = gemRect.top + gemRect.height / 2;
 
-        if (gx > rect.left && gx < rect.right && gy > rect.top && gy < rect.bottom) {
+    if (gx > rect.left && gx < rect.right && gy > rect.top && gy < rect.bottom) {
+        
+        const zoneRect = rect;
+        let occupied = false;
+
+        gems.forEach(g => {
+            if (g !== draggedGem) {
+                const gRect = g.getBoundingClientRect();
+                const centerX = gRect.left + gRect.width / 2;
+                const centerY = gRect.top + gRect.height / 2;
+
+                if (centerX > zoneRect.left && centerX < zoneRect.right && centerY > zoneRect.top && centerY < zoneRect.bottom) {
+                    occupied = true;
+                }
+            }
+        });
+
+        if (!occupied) {
             const parentRect = draggedGem.parentElement.getBoundingClientRect();
             draggedGem.style.left = rect.left - parentRect.left + rect.width / 2 - draggedGem.offsetWidth / 2 + 'px';
             draggedGem.style.top = rect.top - parentRect.top + rect.height / 2 - draggedGem.offsetHeight / 2 + 'px';
             dropped = true;
+        } else {
+            dropped = false;
         }
-    });
+    }
+});
 
-    // Si pas déposée dans une dropzone = retour à la position initiale
     if (!dropped) {
-        draggedGem.style.transition = 'left 0.3s ease, top 0.3s ease'; //retour fluide
+        draggedGem.style.transition = 'left 0.3s ease, top 0.3s ease';
         draggedGem.style.left = draggedGem.dataset.originalLeft;
         draggedGem.style.top = draggedGem.dataset.originalTop;
     }
