@@ -30,8 +30,12 @@
     width: 100vw;
     background-repeat: no-repeat;
     background-position: right;
-background-size: 50%;
+    background-size: 50%;
 
+}
+
+body {
+    overflow: hidden;
 }
 
 #title{

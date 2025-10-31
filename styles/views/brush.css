@@ -6,26 +6,26 @@
 
 .texte {
     color: white;
-    font-size: 40px;
+    /* font-size: 40px; */
     position: fixed;
-    top: 50%;
-    left: 0px;
+    top: 55%;
+    left: 150px;
     transform: translateY(-50%);
     width: 850px;
-    margin-left: 80px;
-    padding: 15px;
+    /* margin-left: 80px; */
+    /* padding: 15px; */
     display: flex;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 
 }
 
 /* Première lettre agrandie */
-.texte p::first-letter {
+/* .texte p::first-letter {
   font-size: 4rem;      
   float: top;            
   line-height: 1;
   margin-top: 0.05em; 
-}
+} */
 
 
 span.jaune {

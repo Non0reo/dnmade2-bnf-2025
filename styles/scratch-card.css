@@ -36,26 +36,26 @@ body {
 @keyframes mouv_gif {
   0%{
     top: 25%;
-    left: 50%;
+    left: 70%;
   }
     25%{
     top: 35%;
-    left: 60%;
+    left: 80%;
   }
     50%{
     top: 45%;
-    left: 50%;
+    left: 70%;
   }
     75%{
     top: 55%;
-    left: 60%;
+    left: 80%;
   }
    90%{
    opacity: 100%;
   }
     100%{
     top: 65%;
-    left: 45%;
+    left: 65%;
     opacity: 0%;
   }
 }
@@ -206,14 +206,12 @@ body {
 }
 
 #text {
-  font-family: 'VelinoText-Light';
   position: relative;
-  font-size: 32px;
   font-style: normal;
-  font-weight: 500;
-  width: 30%;
+  /* font-weight: 500; */
+  /* width: 30%; */
 }
-
+/*
 .text_orange {
   color: #eca900;
 }
@@ -221,7 +219,7 @@ body {
 .text_blanc {
   color: #ffffff;
   margin-bottom: 50px;
-}
+} */
 
 #sous-text {
   font-family: 'VelinoText-LightItalic';
@@ -244,13 +242,15 @@ body {
 #miseEnPage_lo {
   position: relative;
   display: flex;
-  justify-content: left;
-  margin: 5%;
-  margin-left: 8%;
+  justify-content: space-between;
+  /* margin: 5%;
+  margin-left: 8%; */
   align-items: center;
+  margin-right: 250px;
   width: 100%;
   height: 100vh;
-  gap: 50px;
+  /* gap: 50px; */
+  
 }
 
 .pe_gratte_invisible {

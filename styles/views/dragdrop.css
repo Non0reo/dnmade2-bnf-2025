@@ -1,14 +1,10 @@
 .texte {
-   color: white;
-   font-size: 37px;
-   position: fixed;
-   top: 50%;
-   left: 0;
-   transform: translateY(-50%);
-   width: 750px;
-   margin-left: 110px;
-   padding: 15px;
-   display: flex;
+    position: fixed;
+    top: 55%;
+    left: 150px;
+    transform: translateY(-50%);
+    width: 850px;
+    display: flex;
 }
 span.jaune {
    color: #ECA900;

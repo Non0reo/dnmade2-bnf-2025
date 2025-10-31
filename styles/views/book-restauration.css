@@ -595,3 +595,19 @@ section#view-ending-screen{
   z-index: 9999;
 }
 
+
+
+.texte_blanc {
+    font-family: 'VelinoText-Light';
+    font-size: 32px;
+    font-weight: 500;
+    width: 90%;
+    color: white;
+}
+
+.texte_jaune {
+    font-family: 'VelinoText-Light';
+    font-size: 32px;
+    color: #eca900;
+    width: 90%;
+}

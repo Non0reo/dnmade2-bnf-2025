@@ -34,3 +34,47 @@
   bottom: 5%;
   right: 5%;
 } 
+.texte_blanc {
+    font-family: 'VelinoText-Light';
+    font-size: 32px;
+    font-weight: 500;
+    width: 90%;
+    color: white;
+}
+
+.texte_jaune {
+    font-family: 'VelinoText-Light';
+    font-size: 32px;
+    color: #eca900;
+    width: 90%;
+}
+
+body {
+    margin: 150px;
+    margin-top: 60px;
+    overflow: hidden;
+}
+#logo_BnF {
+  width: 120px !important;
+} 
+
+#logo {
+  position: absolute;
+  bottom: 5% !important;
+  right: 5% !important;
+} 
+.texte_blanc {
+    font-family: 'VelinoText-Light';
+    font-size: 32px;
+    font-weight: 500;
+    width: 90%;
+    color: white;
+}
+
+.texte_jaune {
+    font-family: 'VelinoText-Light';
+    font-size: 32px;
+    color: #eca900;
+    width: 90%;
+}
+

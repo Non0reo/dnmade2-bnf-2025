@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  overflow: hidden;
    /* fix for some browsers to enable GPU acceleration */
 }
 
