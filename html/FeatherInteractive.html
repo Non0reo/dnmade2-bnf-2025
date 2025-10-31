@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop BnF - Gobelins - DnMade Numérique 2 - 2025</title>
+
+    <!-- Import styles -->
+    <link rel="stylesheet" href="../styles/views/step-2.css">
+    <!--/ Import styles -->
+
+    <!-- Import scripts lib -->
+    <script src="../scripts/gsap/minified/gsap.min.js"></script>
+    <!--/ Import scripts lib -->
+    <!-- Import scripts -->
+    <script src="../scripts/views/FeatherInteractive.js"></script>
+    <!--/ Import scripts -->
+  </head>
+  <body>
+    <main class="container">
+    <div class="text">
+      <h2>UNE COMMANDE IMPÉRIALE</h2>
+      <p>
+        Ce manuscrit a été copié à l'or
+        liquide et enluminé sur parchemin 
+        vers 984, probablement en vue du 
+        couronnement (qui n'aura pas
+        lieu !) du nouvel empereur du
+        Saint-Empire romain germanique,
+        Henri le Querelleur.
+      </p>
+      <p>
+        Il contient les textes des quatre évangiles de saint Matthieu, saint Marc,
+        saint Luc et saint Jean.
+      </p>
+      <p class="highlight">
+        Cliquez sur la plume pour en révéler une autre.
+      </p>
+    </div>
+
+    <!-- Image centrale floue et transparente -->
+<img class="blur-image" src="../public/images/etape1_FeuilletEvangiles.webp" alt="Manuscrit flou">
+
+    <div class="image">
+      <img id="mainImage"
+           src="../public/images/etape1_FeuilletEvangiles.webp"
+           alt="Manuscrit médiéval">
+      
+      
+
+
+      <!-- Overlay qui descend -->
+      <div class="overlay" id="overlay"></div>
+      
+      <!-- Rectangle décoratif -->
+        <img id="recimage"
+           src="../public/images/Rectangle.svg" 
+           alt="blanc">
+      
+           <div class="feather" id="feather">
+            <img src="../public/images/Plume.PNG" alt="Plume" />
+      </div>
+    </div>
+  </main>
+  </body>
+</html>
+
