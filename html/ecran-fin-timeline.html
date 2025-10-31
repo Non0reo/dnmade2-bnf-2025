@@ -6,7 +6,7 @@
     <title>Workshop BnF - Gobelins - DnMade Numérique 2 - 2025</title>
 
     <!-- Import styles -->
-    <link rel="stylesheet" href="../styles/style.css" />
+    <!-- <link rel="stylesheet" href="../styles/style.css" /> -->
     <link rel="stylesheet" href="../styles/views/ecran-fin-timeline.css">
     <!--/ Import styles -->
 
@@ -15,7 +15,6 @@
     <!--/ Import scripts lib -->
 
     <!-- Import scripts -->
-    <script src="../scripts/index.js"></script>
     <script src="../scripts/views/ecran-fin-timeline.js"></script>
     <!--/ Import scripts -->
   </head>
@@ -25,30 +24,30 @@
     <section id="ecran-fin-timeline">
 
 
-    <h1 id="ecran-fin-timeline-h1"></h1>
-    <h2 id="ecran-fin-timeline-h2"></h2>
-    <h3 id="ecran-fin-timeline-h3"></h3>
+    <h1 id="ecran-fin-timeline-h1">VOUS AVEZ TERMINÉ LE VOYAGE !</h1>
+    <h2 id="ecran-fin-timeline-h2">Restaurez virtuellement la reliure des Évangiles de la Sainte-Chapelle À quoi pouvait ressembler cette reliure en or avec la totalité de ses pierres et ses perles ?</h2>
+    <h3 id="ecran-fin-timeline-h3">Des documents historiques appelés << inventaires >> nous permettent de restaurer virtuellement cette reliure pour la révéler dans tout son éclat.</h3>
     <button id="button-restaurer-evangeliaire" onclick='window.location.href="./views/book-restauration.html"'>Restaurer l'Évangéliaire</button>
     
 
   </section>
     <script>
 
-    fetch('../public/data/ecran-fin-timeline.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Erreur de chargement du JSON');
-        }
-        return response.json();
-      })
-      .then(data => {
-        document.getElementById('title').innerText = data.title;
-        document.getElementById('ecran-fin-timeline-h1').innerText = data["ecran-fin-timeline-h1"];
-        document.getElementById('ecran-fin-timeline-h2').innerText = data["ecran-fin-timeline-h2"];
-        document.getElementById('ecran-fin-timeline-h3').innerText = data["ecran-fin-timeline-h3"];
-        document.getElementById('button-restaurer-evangeliaire').innerText = data["button-restaurer-evangeliaire"];
-      })
-      .catch(error => console.error(error));
+    // fetch('../public/data/ecran-fin-timeline.json')
+    //   .then(response => {
+    //     if (!response.ok) {
+    //       throw new Error('Erreur de chargement du JSON');
+    //     }
+    //     return response.json();
+    //   })
+    //   .then(data => {
+    //     document.getElementById('title').innerText = data.title;
+    //     document.getElementById('ecran-fin-timeline-h1').innerText = data["ecran-fin-timeline-h1"];
+    //     document.getElementById('ecran-fin-timeline-h2').innerText = data["ecran-fin-timeline-h2"];
+    //     document.getElementById('ecran-fin-timeline-h3').innerText = data["ecran-fin-timeline-h3"];
+    //     document.getElementById('button-restaurer-evangeliaire').innerText = data["button-restaurer-evangeliaire"];
+    //   })
+    //   .catch(error => console.error(error));
       
       </script>
   </body>

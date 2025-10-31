@@ -1,10 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  width: 1920px;
-  height: 1080px;
+  /* width: 1920px;
+  height: 1080px; */
   background-color: #252525;
-  margin: 0px;
+  /* margin: 0px;
   display: flex;
   justify-content: center;
+  overflow: hidden; */
+  margin: 150px;
+  padding: 0;
+  margin-top: 60px;
+  overflow: hidden;
 }
 
 @font-face {
@@ -14,45 +25,45 @@ body {
 
 @font-face {
   font-family: "VelinoText-Thin";
-  src: url("../public/fonts/VELINO Text/VelinoText-Thin.otf") format("opentype");
+  src: url("../public/fonts/VELINOText/VelinoText-Thin.otf") format("opentype");
 }
 
 @font-face {
   font-family: "VelinoText-Light";
-  src: url("../public/fonts/VELINO Text/VelinoText-Light.otf") format("opentype");
+  src: url("../public/fonts/VELINOText/VelinoText-Light.otf") format("opentype");
 }
 
 @font-face {
   font-family: "VelinoText-Medium";
-  src: url("../public/fonts/VELINO Text/VelinoText-Medium.otf") format("opentype");
+  src: url("../public/fonts/VELINOText/VelinoText-Medium.otf") format("opentype");
 }
 
 @font-face {
   font-family: "VelinoText-Bold";
-  src: url("../public/fonts/VELINO Text/VelinoText-Bold.otf") format("opentype");
+  src: url("../public/fonts/VELINOText/VelinoText-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "VelinoText-Black";
-  src: url("../public/fonts/VELINO Text/VelinoText-Black.otf") format("opentype");
+  src: url("../public/fonts/VELINOText/VelinoText-Black.otf") format("opentype");
 }
 
 #container-zoom-reliure {
   margin-top: 5vh;
-  width: 100vw;
+  width: 100%;
   height: 95vh;
 }
 
 .reliure {
-  width: 985px;
   height: 985px;
   display: flex;
   position: relative;
   top: 62px;
-  right: 95px; /* 55px de base --- +40px right */
+  right: 95px;
+  /* 55px de base --- +40px right */
 }
 
-h1 {
+/* h1 {
   font-family: "VelinoText-Medium";
   line-height: 1.15;
   letter-spacing: normal;
@@ -65,7 +76,37 @@ h1 {
   flex-direction: row;
   top: -735px;
   right: 105px;
+} */
+
+.texte_blanc {
+  font-family: "VelinoText-Light";
+  font-size: 32px;
+  font-weight: 500;
+  width: 90%;
+  color: white;
+  /* position: absolute; */
+
+  display: flex;
+  position: relative;
+  justify-content: end;
+  flex-direction: row;
+  top: -745px;
+  right: -225px;
 }
+
+#logo_BnF {
+  width: 120px !important;
+} 
+
+#logo {
+  position: absolute;
+  bottom: 5% !important;
+  right: 5% !important;
+} 
+
+
+
+
 
 .bouton-termine {
   display: block;

@@ -1,6 +1,6 @@
  @font-face {
     font-family: 'VelinoText-Medium';
-    src: url(/public/fonts/VELINOText/VelinoText-Medium.otf) format('opentype');
+    src: url(../../public/fonts/VELINOText/VelinoText-Medium.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
  } 
@@ -8,14 +8,14 @@
 
  @font-face {
     font-family: 'VelinoText-Light';
-    src: url(/public/fonts/VELINOText/VelinoText-Light.otf) format('opentype');
+    src: url(../../public/fonts/VELINOText/VelinoText-Light.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
  } 
 
  @font-face {
     font-family: 'Injurial-total';
-    src: url(/public/fonts/Injurial/205TF-Injurial-Regular.otf) format('opentype');
+    src: url(../../public/fonts/Injurial/205TF-Injurial-Regular.otf) format('opentype');
     font-weight: 100;
     font-style: normal;
  }
@@ -46,7 +46,7 @@ background-size: 50%;
     font-size: 6vw;
     width: 60%;
     margin: auto;
-    padding-top: 18vh;
+    padding-top: 150px;
     align-items: center;
     justify-content: center;
     text-align: center;

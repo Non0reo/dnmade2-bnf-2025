@@ -10,6 +10,7 @@ header {
   position: absolute;
   top: 0px;
   z-index: 1000;
+  left: 0;
 }
 
 @keyframes traitAppear {
