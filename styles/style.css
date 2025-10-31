@@ -24,3 +24,13 @@
     font-family: 'VelinoText-Medium';
     src: url('../public/fonts/VELINO Text/VelinoText-Medium.otf') format('opentype');
 }
+
+#logo_BnF {
+  width: 120px !important;
+} 
+
+#logo {
+  position: absolute;
+  bottom: 5% !important;
+  right: 5% !important;
+} 

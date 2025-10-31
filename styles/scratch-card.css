@@ -177,16 +177,6 @@ body {
   position: relative;
 }
 
-#logo_BnF {
-  width: 120px;
-}
-
-#logo {
-  position: absolute;
-  bottom: 5%;
-  left: 90%;
-}
-
 .gradient_1 {
   position: absolute;
   left: 60%;

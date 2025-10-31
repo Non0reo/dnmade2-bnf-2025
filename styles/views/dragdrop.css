@@ -140,16 +140,6 @@ body {
    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.logo-bnf {
-  position: fixed;
-  bottom: 60px;
-  right: 60px;
-  width: 120px;
-  height: auto;
-  z-index: 100;
-  pointer-events: none;
-  user-select: none;
-}
 
 .main {
   position: absolute;
