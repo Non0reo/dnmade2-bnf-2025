@@ -1,0 +1,160 @@
+.loading-screen-black{
+  width:100vw;
+  height:100vh;
+  z-index:10;
+  background-color: rgb(28, 28, 28);
+  position:absolute;
+  user-select: none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.loading-screen-black img{
+  transform-origin: center;
+animation: spinInfinite 3s infinite ease-in-out;
+}
+
+#zoom-book-end {
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+    background-image: url(../../public/images/fond.png);
+}
+
+#zoom-book-end-container {
+  overflow: auto;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+ display: flex;
+  justify-content: safe center;
+  align-items: safe center;
+  scrollbar-width: none;
+}
+
+.zoom-title-tuto{
+  position:absolute;
+  color:white;
+   font-family: 'VelinoText-Light';
+    src: url('../../public/fonts/VELINO Text/VelinoText-Light.otf') format('opentype');
+  font-size:3vw;
+  text-align:center;
+  text-shadow: 2px 2px 0px black;
+  
+}
+
+#zoom-book-end-container button{
+  width: 100px;
+  height: 100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  top:5%;
+  left:5%;
+  background:none;
+  border: none;
+  opacity:0.6
+}
+
+#zoom-book-end-container button a,#zoom-book-end-container button img{
+  width:100%;
+  height:100%;
+  object-fit: contain;
+}
+
+#zoom-book-end-image {
+  width: 40vw;
+  touch-action: manipulation;
+  user-select:none;
+  max-width: none;
+   scrollbar-width: none;
+   min-height:100%;
+}
+
+#zoom-book-end-buttons {
+  margin:auto;
+  width:25%;
+  display: flex;
+  flex-direction:column;
+  bottom: 5%;
+  right: 1%;
+  position: fixed;
+
+}
+
+#zoom-book-end-buttons p{
+  color:white;
+  font-family: 'VelinoText-Light';
+  src: url('../../public/fonts/VELINO Text/VelinoText-Light.otf') format('opentype');
+  font-size:1.8vw;
+  text-align:center;
+}
+
+#zoom-book-end-buttons div{
+  width:100%;
+  display:flex;
+  justify-content:space-evenly;
+}
+
+
+#zoom-book-end-zoom-in-button,
+#zoom-book-end-zoom-out-button {
+  opacity:0.6;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background:none;
+ border:none;
+}
+
+#zoom-book-end-buttons img{
+  width:80%;
+  height:80%;
+  object-fit: contain;
+}
+
+#zoom-book-end-preview{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top:5%;
+    right:2%;
+    border:5% solid black;
+    background-color: rgba(0, 0, 0, 0.497)
+}
+
+#zoom-book-end-preview img{
+    width:80%;
+    height:90%;
+    object-fit: contain;
+}
+
+#zoom-book-end-preview span{
+transform-origin: center;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border:2px white solid;
+border-radius:10px;
+width:100%;
+height:100%;
+}
+
+@keyframes spinInfinite{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../styles/views/book-restauration.css">
+        <link rel="stylesheet" href="../../styles/style.css">
+        <script src="../../scripts/gsap/minified/gsap.min.js"></script>
+        <script src="../../scripts/gsap/minified/Draggable.min.js"></script> 
+        <title>Book Restauration</title>
+    </head>
+    
+    <body>
+
+         <section id="view-ending-screen"> 
+
+                <div class="ending-congrats">
+                    <h1 class="ending-title">Félicitations !</h1>
+                    <p class="ending-text">Vous êtes parvenu à reconstituer la reliure.</p>
+                </div>
+
+                <img class="ending-reliure" src="../../public/images/reliure-reconstituée.png" alt="reliure_ending-scene">
+
+            <img class="ending-glow ending_glow-1" src="../../public/images/game/glow.png" alt="glow">
+            <img class="ending-glow ending_glow-2" src="../../public/images/game/glow.png" alt="glow">
+            <img class="ending-glow ending_glow-3" src="../../public/images/game/glow.png" alt="glow">
+            <img class="ending-bg" src="../../public/images/game/background-table-book.png" alt="">
+
+            <div class="ending-link">
+                <p class="ending-link-text">Observez la reliure en détails</p>
+                <img class="ending-link-fingerprint" src="../../public/images/ui/Empreinte.png" alt="">
+            </div>
+
+        </section>
+
+        
+        <section id="view-book-restauration" class="viewSection">
+
+            <div class="intro-window" id="intro-window">
+            <h2>Reconstituez la reliure</h2>
+            <p>
+                Vite !
+                <br>
+                Les pierres du livre ont été volées !
+                <br>
+                Renseignez-vous sur les pierres et placez-les sur la reliure.
+            </p>
+
+            <div class="intro-gems">
+                <img src='../../public/images/game/gems/calcedoine.png'>
+                <img src='../../public/images/game/gems/perle.png'>
+                <img src='../../public/images/game/gems/spinelle.png'>
+                <img src='../../public/images/game/gems/saphir.png'>
+                <img src='../../public/images/game/gems/rubis.png'>
+                <img src='../../public/images/game/gems/emeraude.png'>
+            </div>
+
+            <button type="button" class="start-btn">
+                <img src='../../public/images/ui/start-button.svg'>
+            </button>
+            </div>
+            <div class="game-scene" id="game-scene" style="display:none;"></div>
+
+            <div class="game-emplacement-gems">
+                <!-- <img class="emplacement-gems" src="../../public/images/game/gems/emplacement-emeraudes.png" alt="emplacement-emeraudes">
+                <img class="emplacement-gems" src="../../public/images/game/gems/emplacement-perles.png" alt="emplacement-perles">
+                <img class="emplacement-gems" src="../../public/images/game/gems/emplacement-rubis.png" alt="emplacement-rubis">
+                <img class="emplacement-gems" src="../../public/images/game/gems/emplacement-saphirs-des-angles.png" alt="emplacement-saphirs-des-angles">
+                <img class="emplacement-gems" src="../../public/images/game/gems/emplacement-saphirs.png" alt="emplacement-saphirs"> -->
+            </div>
+
+                <header>
+                    <!-- <button id="back-to-library" class="nav-button">Back to Library</button>
+                    <button id="back-to-library" class="nav-button">Back to Library</button> -->
+                <button class="back-button">
+                    <img src="../../public/images/ui/back-button.svg" alt="">
+                </button>
+
+                <button class="close-button">
+                    <img src="../../public/images/ui/x-button.svg" alt="">
+                </button>
+                </header>
+
+                <div class="interactive-scene">
+                    <div class="gems-list"></div>
+                    <div class="game-book"></div>
+                    <div class="gems-list"></div>
+                    <!-- <button class="btn_ending btn_removed">
+                        <img src="/public/images/ui/Bouton_fin.svg" alt="btn_ending">
+                    </button> -->
+                </div>
+
+        </section>
+
+        <div class="popup" id="popup">
+            <div class="overlay"></div>
+            <div class="popup-content">
+
+                <button type="button" class="close-btn">
+                    <img src='../../public/images/Croix.svg'>
+                </button>
+
+                <div class="image">
+                    <img id="popup-image" src='../../public/images/pierre-1.png' alt="">
+                </div>
+                <h2 id="popup-name">
+                Saphir
+                </h2>
+                <h3>
+                    Le saviez-vous ?
+                </h3>
+                <p id="popup-text">
+                    Ces pierres bleues, dîtes saphirs (sauf celle en haut à droite qui est une cordiérite, intaille antique sculptée, mais posée à l’envers). Ces saphirs proviennent d’Inde ou de Ceylan (Sri Lanka).
+                </p>
+            </div>
+        </div>
+
+       
+    </body>
+
+<script src="../../public/data/book-restauration-data.js"></script>
+<script src="../../scripts/views/book-restauration.js"></script>
+
+</html>

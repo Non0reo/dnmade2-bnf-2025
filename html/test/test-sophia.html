@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/views/book-restauration.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Book Restauration - Introduction</title>
+</head>
+<body>
+  <section id="view-book-restauration" class="viewSection">
+    
+    <header>
+        <img src="public/images/ui/back-button.svg" alt="" class="back-button">
+    </header>
+      <div class="game-book"></div>
+
+        <div class="intro-window">
+      <h2>Reconstituez la reliure</h2>
+      <p>
+        Vite !
+        <br>
+        Les pierres du livre ont été volées !
+        <br>
+        Renseignez-vous sur les pierres et placez-les sur la reliure.
+      </p>
+
+      <div class="intro-gems">
+        <img src='public/images/game/gems/calcedoine.png'>
+        <img src='public/images/game/gems/perle.png'>
+        <img src='public/images/game/gems/spinelle.png'>
+        <img src='public/images/game/gems/saphir.png'>
+        <img src='public/images/game/gems/rubis.png'>
+        <img src='public/images/game/gems/emeraude.png'>
+      </div>
+    <a href="html/views/book-restauration.html">
+      <button type="button" class="start-btn">
+                <img src='public/images/ui/start-button.svg'>
+      </button>
+    </a>
+    </div>
+
+  <script>
+    document.querySelector('.start-btn').addEventListener('click', () => {
+      window.location.href = './book-restauration.html';
+    });
+  </script>
+
+  </section>
+  
+  
+</body>
+</html>
+
+
+
+

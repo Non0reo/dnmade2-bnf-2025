@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop BnF - Gobelins - DnMade Numérique 2 - 2025</title>
+
+    <!-- Import styles -->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/views/zoom-book-end.css" />
+    <!--/ Import styles -->
+
+    <!-- Import scripts lib -->
+    <script src="../scripts/gsap/minified/gsap.min.js"></script>
+    <!--/ Import scripts lib -->
+
+    <!-- Import scripts -->
+
+   <script src="../scripts/views/zoom-book-end-anaelle.js"></script>
+  <link rel="preload" href="../public/images/imagezoombookend.png" as="image" type="image/png" />
+   
+  
+
+    <!--/ Import scripts -->
+  </head>
+  <body>
+
+     <div class="loading-screen-black">
+     <img src="../public/images/loadingImage.svg" />
+    </div>
+
+    <section id="zoom-book-end">
+      <div id="zoom-book-end-container">
+        <button><a href="../index.html"><img src="../public/images/buttonCross.svg" alt="Appuyez pour retourner à l'accueil"/></a></button>
+
+        <h1 class="zoom-title-tuto">TOUCHEZ L'ÉCRAN POUR VOUS DÉPLACER</h1>
+        <img
+          id="zoom-book-end-image"
+          src="../public/images/imagezoombookend.png"
+          alt="image précise de la reliure"
+        />
+      </div>
+
+      <div id="zoom-book-end-buttons">
+        <p class="zoom-book-end-text-tuto">Utilisez les commandes pour agrandir ou rétrécir la vue</p>
+        <div>
+        <button id="zoom-book-end-zoom-in-button"><img src="../public/images/buttonZoomAdd.svg" alt="Appuyez pour zoomer"></button>
+        <button id="zoom-book-end-zoom-out-button"><img src="../public/images/buttonZoomLess.svg" alt="Appuyez pour dézoomer"/></button></div>
+      </div>
+
+
+
+      <div id="zoom-book-end-preview">
+        <img src="../public/images/movingInsideZoom_ReliureImage.png" alt="image précise de la reliure">
+        <span></span>
+      </div>
+
+    </section>
+  </body>
+  
+</html>

@@ -1,24 +1,21 @@
 @import url('./reset.css');
 
-@import url('./reset.css');
-
 @font-face {
     font-family: 'Injurial';
-    src: url('../../public/fonts/Injurial/205TF-Injurial-Regular.otf') format('opentype');
+    src: url('../public/fonts/Injurial/205TF-Injurial-Regular.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Injurial-ttf';
-    src: url('../../public/fonts/Injurial/205TF-Injurial-Regular.ttf') format('opentype');
+    src: url('../public/fonts/Injurial/205TF-Injurial-Regular.ttf') format('opentype');
 }
-
 
 @font-face {
     font-family: 'VelinoText-Light';
-    src: url('../../public/fonts/VELINO Text/VelinoText-Light.otf') format('opentype');
+    src: url('../public/fonts/VELINO Text/VelinoText-Light.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'VelinoText-LightItalic';
-    src: url('../../public/fonts/VELINO Text/VelinoText-LightItalic.otf') format('opentype');
+    src: url('../public/fonts/VELINO Text/VelinoText-LightItalic.otf') format('opentype');
 }
