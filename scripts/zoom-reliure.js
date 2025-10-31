@@ -28,5 +28,5 @@ const containerZoomReliure = document.getElementById('container-zoom-reliure');
 
 
 boutonTermine[0].addEventListener("click", () =>
-  containerZoomReliure.classList.add('hidden')
+  window.location.href = '../html/ecran-fin-timeline.html'
 )
