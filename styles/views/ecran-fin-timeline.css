@@ -1,0 +1,112 @@
+ @font-face {
+    font-family: 'VelinoText-Medium';
+    src: url(/public/fonts/VELINOText/VelinoText-Medium.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+ } 
+
+
+ @font-face {
+    font-family: 'VelinoText-Light';
+    src: url(/public/fonts/VELINOText/VelinoText-Light.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+ } 
+
+ @font-face {
+    font-family: 'Injurial-total';
+    src: url(/public/fonts/Injurial/205TF-Injurial-Regular.otf) format('opentype');
+    font-weight: 100;
+    font-style: normal;
+ }
+
+
+#ecran-fin-timeline{
+    margin: 0;
+    
+    background-image:url(../../public/images/reliure-fond-ecran-fin.png);
+ 
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: right;
+background-size: 50%;
+
+}
+
+#title{
+    display:none ;
+}
+
+
+#ecran-fin-timeline-h1{
+    display: flex;
+    color: white;
+    font-family: 'Injurial-total';
+    font-size: 6vw;
+    width: 60%;
+    margin: auto;
+    padding-top: 18vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#ecran-fin-timeline-h2{
+    display: flex;
+    margin: auto;
+    font-family: 'VelinoText-Medium';
+    width: 68%;
+    margin-top: 6vh;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    line-height: 5vh;
+}
+
+#ecran-fin-timeline-h3{
+    font-family: 'VelinoText-light';
+    width: 60%;
+    margin: auto;
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 1.4vw;
+    line-height: 3vh;
+    color: white;
+}
+
+#button-restaurer-evangeliaire{
+
+    width: 33%;
+    height: 10vh;
+    display: flex;
+    margin: auto;
+    margin-top: 5vh;
+    text-align: center;
+    font-family:'VelinoText-Medium' ;
+    font-size: 4vh;
+align-items: center;
+justify-content: center;
+background-image: url(../../public/images/ecran-fin-timeline-Bouton.svg);
+background-repeat: no-repeat;
+background-size: contain;
+color: white;
+background-color: rgba(220, 220, 220, 0);
+border: none;
+ 
+    
+}
+
+body{
+    background-color: #252525;
+    background:radial-gradient(circle,rgba(37, 37, 37, 1) 0%, rgba(42, 41, 40, 1) 61%, rgba(71, 65, 54, 1) 100%);
+}
+
+#button-restaurer-evangeliaire:hover{
+    background-image: url(../../public/images/ecran-fin-timeline-Bouton-hover.svg);
+    color: white;
+background-color: rgba(220, 220, 220, 0);
+border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
