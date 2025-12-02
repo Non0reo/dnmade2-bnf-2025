@@ -89,6 +89,8 @@ function start() {
               videoGif.style.display = 'none'
             }, 500)
           }, 5000) */
+
+          document.querySelector('#point-2').classList.add('next');
           
         }, 1500)
       }

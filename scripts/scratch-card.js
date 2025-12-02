@@ -181,7 +181,8 @@ window.addEventListener('DOMContentLoaded', () => {
     if (filledInPixels > 80) {
       canvas_gratte.style.pointerEvents = 'none'
 
-      ctx_am.clearRect(0, 0, canvas_gratte.width, canvas_gratte.height)
+      ctx_am.clearRect(0, 0, canvas_gratte.width, canvas_gratte.height);
+      document.querySelector('#point-4').classList.add('next');
 
       setTimeout(() => {
         const livre_am = document.getElementById('livre_am')

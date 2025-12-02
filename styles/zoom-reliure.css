@@ -94,6 +94,16 @@ h1 {
   right: -225px;
 }
 
+.text_yellow{
+  position:absolute;
+  display:flex;
+  left:42%;
+  top:65%;
+  font-family: 'VelinoText-Light';
+  font-size: 32px;
+  color: #eca900;
+}
+
 #logo_BnF {
   width: 120px !important;
 } 

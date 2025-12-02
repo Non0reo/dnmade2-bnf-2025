@@ -8,7 +8,7 @@ const popUpData = {
             "emplacement": "../../public/images/game/gems/emplacement-emeraudes.png",
         },
         {
-            "name": "Gros saphir",
+            "name": "Gros Saphir",
             "image": "../../public/images/game/gems/saphir.png",
             "text": `Les gros saphirs, ici de couleur bleue, sont aux coins afin de protéger la reliure en la surélevant quand on la pose à plat. Ils proviennent d’Inde ou de Ceylan (Sri Lanka) et témoignent des liens commerciaux entre l’Europe et l’Orient. Le bleu est la couleur des rois de France mais aussi de la robe de la Vierge.
             
@@ -20,16 +20,16 @@ const popUpData = {
         {
             "name": "Rubis",
             "image": "../../public/images/game/gems/rubis.png",
-            "text": "Même si elles sont assez proches en taille et en couleur, les pierres rouges sont de deux types : des rubis (coridon ou oxyde d’aluminium coloré par le chrome) et des spinelles (oxyde de magnésium et d’aluminium). Elles symbolisent souvent l’amour divin, le martyre et la Passion du Christ.",
+            "text": "Même si elles sont assez proches en taille et en couleur, les pierres roses sont de plusieurs types : des rubis ou des saphirs (corindon ou oxyde d’aluminium coloré par le chrome) et des spinelles (oxyde de magnésium et d’aluminium). Elles symbolisent souvent l’amour divin, le martyre et la Passion du Christ.",
             "dropbox": [37, 85],
             "emplacement": "../../public/images/game/gems/emplacement-rubis.png",
         },
         {
-            "name": "Spinelle",
+            "name": "Spinelle et Saphir Rose",
             "image": "../../public/images/game/gems/spinelle.png",
-            "text": "Même si elles sont assez proches en taille et en couleur, les pierres rouges sont de deux types : des rubis (coridon ou oxyde d’aluminium coloré par le chrome) et des spinelles (oxyde de magnésium et d’aluminium). Elles symbolisent souvent l’amour divin, le martyre et la Passion du Christ.",
+            "text": "Même si elles sont assez proches en taille et en couleur, les pierres roses sont de plusieurs types : des rubis ou des saphirs (corindon ou oxyde d’aluminium coloré par le chrome) et des spinelles (oxyde de magnésium et d’aluminium). Elles symbolisent souvent l’amour divin, le martyre et la Passion du Christ.",
             "dropbox": [47, 9],
-            "emplacement": "../../public/images/game/gems/emplacement-rubis.png",
+            "emplacement": "../../public/images/game/gems/emplacement-spinelles.png",
         },
         {
             "name": "Perle",

@@ -59,13 +59,18 @@ body {
 #ecran-fin-timeline-h2{
     display: flex;
     margin: auto;
-    font-family: 'VelinoText-Medium';
     width: 68%;
     margin-top: 6vh;
-    color: white;
     text-align: center;
     font-size: 2vw;
     line-height: 5vh;
+}
+
+.texte_jaune {
+    font-family: 'VelinoText-Light';
+    font-size: 32px;
+    color: #eca900;
+    width: 90%;
 }
 
 #ecran-fin-timeline-h3{

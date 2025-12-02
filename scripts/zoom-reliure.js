@@ -16,9 +16,25 @@ function afficherZoom(cible1, cible2, cible3, cible4) {
   cible4.classList.add("active");
 }
 
+let text = document.createElement('p');
+
+let userTouch = false ;
+
+text.innerHTML = "Touchez les cercles pour découvrir les détails de la reliure."
+text.className = "text_yellow"
+document.body.appendChild(text);
+
+const textYellow = document.querySelector("text_yellow");
+
+
+
 for (let i = 0; i < cercles.length; i++) {
   cercles[i].addEventListener("click", () => {
+    userTouch = true;
     afficherZoom(cercles[i], grands[i], petits[i], traits[i]);
+    if(userTouch == true){
+     document.body.removeChild(text);
+}
   });
 }
 

@@ -55,37 +55,49 @@ function drop(e) {
     const gemRect = draggedGem.getBoundingClientRect();
 
     dropzones.forEach(zone => {
-    const rect = zone.getBoundingClientRect();
-    const gx = gemRect.left + gemRect.width / 2;
-    const gy = gemRect.top + gemRect.height / 2;
+        const rect = zone.getBoundingClientRect();
+        const gx = gemRect.left + gemRect.width / 2;
+        const gy = gemRect.top + gemRect.height / 2;
 
-    if (gx > rect.left && gx < rect.right && gy > rect.top && gy < rect.bottom) {
-        
-        const zoneRect = rect;
-        let occupied = false;
+        if (gx > rect.left && gx < rect.right && gy > rect.top && gy < rect.bottom) {
+            
+            const zoneRect = rect;
+            let occupied = false;
 
-        gems.forEach(g => {
-            if (g !== draggedGem) {
-                const gRect = g.getBoundingClientRect();
-                const centerX = gRect.left + gRect.width / 2;
-                const centerY = gRect.top + gRect.height / 2;
+            gems.forEach(g => {
+                if (g !== draggedGem) {
+                    const gRect = g.getBoundingClientRect();
+                    const centerX = gRect.left + gRect.width / 2;
+                    const centerY = gRect.top + gRect.height / 2;
 
-                if (centerX > zoneRect.left && centerX < zoneRect.right && centerY > zoneRect.top && centerY < zoneRect.bottom) {
-                    occupied = true;
+                    if (centerX > zoneRect.left && centerX < zoneRect.right && centerY > zoneRect.top && centerY < zoneRect.bottom) {
+                        occupied = true;
+                    }
                 }
-            }
-        });
+            });
 
-        if (!occupied) {
-            const parentRect = draggedGem.parentElement.getBoundingClientRect();
-            draggedGem.style.left = rect.left - parentRect.left + rect.width / 2 - draggedGem.offsetWidth / 2 + 'px';
-            draggedGem.style.top = rect.top - parentRect.top + rect.height / 2 - draggedGem.offsetHeight / 2 + 'px';
-            dropped = true;
-        } else {
-            dropped = false;
+            if (!occupied) {
+                const parentRect = draggedGem.parentElement.getBoundingClientRect();
+                draggedGem.style.left = rect.left - parentRect.left + rect.width / 2 - draggedGem.offsetWidth / 2 + 'px';
+                draggedGem.style.top = rect.top - parentRect.top + rect.height / 2 - draggedGem.offsetHeight / 2 + 'px';
+                dropped = true;
+                zone.classList.add('occupied');
+            } else {
+                dropped = false;
+            }
         }
+    });
+
+    let allDropZonesOccupied = true;
+    dropzones.forEach(zone => {
+        if (!zone.classList.contains('occupied')) {
+            allDropZonesOccupied = false;
+        }
+    });
+
+    if (allDropZonesOccupied) {
+        document.querySelector('#point-5').classList.add('next');
     }
-});
 
     if (!dropped) {
         draggedGem.style.transition = 'left 0.3s ease, top 0.3s ease';
@@ -177,68 +189,3 @@ window.addEventListener('load', () => {
         }, { passive: false });
     });
 });
-
-
-
-// PARTIE FRISE
-
-
-
-let points;
-let annees;
-let tirets;
-let descriptions;
-let pointsBas;
-
-document.addEventListener('DOMContentLoaded', () => {
-
-  // Set the initial step class when the page loads
-  document.querySelector('ol').classList.add('step-4'); // "step" à changer selon la page active
-
-  points = document.getElementsByClassName('point')
-  annees = document.getElementsByClassName('annee')
-  tirets = document.getElementsByClassName('vl')
-  descriptions = document.getElementsByClassName('description')
-  pointsBas = document.getElementsByClassName('pointBas')
-
-  for (let i = 0; i < points.length; i++) {
-    let point = points[i];
-    let annee = annees[i];
-    let tiret = tirets[i];
-    let description = descriptions[i];
-    let pointBas = pointsBas[i];
-    point.addEventListener('click', function () {
-
-      changerEtat(point, annee, tiret, description, pointBas);
-    })
-  }
-})
-
-function changerEtat(cible1, cible2, cible3, cible4, cible5) {
-  const ol = document.querySelector('ol');
-
-  // Enlève toutes les classes step
-  ol.classList.remove('step-1', 'step-2', 'step-3', 'step-4', 'step-5');
-
-  // Enlève la classe active de tous les éléments
-  for (let i = 0; i < points.length; i++) {
-    annees[i].classList.remove('active')
-    points[i].classList.remove('active')
-    tirets[i].classList.remove('active')
-    descriptions[i].classList.remove('active')
-    pointsBas[i].classList.remove('active')
-  }
-
-  // Rajoute la classe active à tous les éléments associés au point activé
-  cible1.classList.add('active')
-  cible2.classList.add('active')
-  cible3.classList.add('active')
-  cible4.classList.add('active')
-  cible5.classList.add('active')
-
-  // Rajoute la classe step correspondante à la frise selon le point activé
-  const pointIndex = Array.from(points).indexOf(cible1);
-  if (pointIndex >= 0 && pointIndex < 5) { // step-1 jusqu'à step-5
-    ol.classList.add(`step-${pointIndex + 1}`);
-  }
-}

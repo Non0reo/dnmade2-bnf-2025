@@ -25,10 +25,9 @@
 
 .intro-window p {
   font-family: 'VelinoText-Thin';
-  font-size: 25px;
+  font-size: 32px;
   color: white;
-  margin: 35px 180px;
-  line-height: 1.5;
+  margin: 35px 55px;
 }
 
 .start-btn {
@@ -79,7 +78,7 @@
     justify-content: center;
     align-items: center;
 
-    background-image: url('../../public/images/game/background-table-book.png');
+    background-image: url('../../public/images/game/fond_jeu.png');
     background-color: black;
     background-position: center center;
     background-size: cover;
@@ -278,7 +277,7 @@ h2{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.15) ;
-    max-width:690px;
+    max-width:45%;
     width:90%;
     background-color: rgba(0,0,0,0.8);
     padding: 25px;
@@ -324,7 +323,7 @@ h2{
 
 .popup .popup-content h3 {
     margin:10px 0px;
-    font-size: 21px;
+    font-size: 32px;
     font-family: 'VelinoText-ThinItalic';
     color:white;
     text-align: center;
@@ -332,10 +331,9 @@ h2{
 
 .popup .popup-content p {
     margin:15px 50px 35px 50px;
-    font-size: 23px;
+    font-size: 32px;
     color:white;
     text-align: center;
-    line-height: 1.5;
 }
 
 .close-btn {

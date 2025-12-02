@@ -116,6 +116,27 @@ function addGems() {
       gemImageDraggable.classList.add('gem-draggable', 'gem')
       gemImageGhost.classList.add('gem-ghost', 'gem')
 
+      if (count==0){
+        gemImageDraggable.style.height = "12vmin"
+        gemImageGhost.style.height = "12vmin"
+      }
+
+      if (count==1){
+        gemImageDraggable.style.height = "13vmin"
+        gemImageGhost.style.height = "13vmin"
+      }
+
+      if (count==3){
+        gemImageDraggable.style.height = "9vmin"
+        gemImageGhost.style.height = "9vmin"
+      }
+
+      if (count==4){
+        gemImageDraggable.style.height = "9vmin"
+        gemImageGhost.style.height = "9vmin"
+      }
+      
+
       gemContent.appendChild(gemImageGhost)
       gemContent.appendChild(gemImageDraggable)
 
