@@ -96,7 +96,7 @@ function drop(e) {
     });
 
     if (allDropZonesOccupied) {
-        document.querySelector('#point-5').classList.add('next');
+        
     }
 
     if (!dropped) {
